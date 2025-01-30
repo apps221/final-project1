@@ -22,6 +22,7 @@ body {
 }
 .nav__row {
     display: flex;
+    width: 100%;
     justify-content: space-between;
 }
 li {
@@ -877,6 +878,121 @@ footer {
     z-index: 2;
     cursor: pointer;
     transition: all 300ms; 
+}
+@media (max-width: 950px) {
+    .section__title {
+        text-align: center;
+    }
+    .header__email {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+      
+    }
+    .header__description {
+        padding: 0;
+    }
+    .row {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        
+    }
+    .header__email--input {
+        position: static;
+        margin-bottom: 10px;
+    }
+        .header__email--btn {
+            background-color: #6415ff;
+    padding: 12px 32px;
+    border-radius: 500px;
+    border: none;
+    font-size: 14px;
+    color: #fff;
+    font-weight: bold;
+        }
+    .feature {
+        width: calc(100% / 2);
+    }
+    .section__para {
+        text-align: center;
+    }
+   #quality .row {
+    flex-direction: column-reverse;
+   }
+   .quality__img--wrapper {
+     margin-bottom: 60px;
+     width: 100%;
+   }
+   .quality__description {
+    margin-right: 0;
+   }
+  .steps__description {
+    padding-left: 0;
+    padding-top: 68px;
+    margin-left: 0;
+  }
+  .step {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+  .step__description {
+    margin-left: 0;
+  }
+  .steps__list {
+    align-items: center;
+  }
+  .values__list {
+    flex-direction: column;
+  }
+  .values__description {
+    padding: 0;
+  }
+  .value {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .value:nth-of-type(1) {
+    margin-right: 0;
+}
+.values__img {
+    margin-top: 32px;
+}
+.plans {
+    flex-direction: column;
+    align-items: center;
+}
+.plan {
+    margin-right: 0;
+}
+.testimonials__description {
+    padding: 0;
+}
+.testimonial__bottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.start__row {
+    flex-direction: column;
+}
+.start__buttons {
+    align-items: center;
+    justify-content: center;
+}
+.start__button:nth-child(1) {
+    height: 66px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.start__title {
+    margin-bottom: 12px;
+}
 }
 @media (max-width: 708px) {
     .nav__links {
